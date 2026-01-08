@@ -367,6 +367,24 @@ main {
   gap: 24px;
 }
 
+.card-grid.featured-grid {
+  grid-template-columns: minmax(260px, 1.2fr) minmax(240px, 0.9fr);
+  align-items: stretch;
+}
+
+.featured-card {
+  padding: 32px;
+}
+
+.featured-card p {
+  font-size: 1.05rem;
+}
+
+.stacked-cards {
+  display: grid;
+  gap: 24px;
+}
+
 .card {
   padding: 26px;
   border-radius: 22px;
@@ -597,6 +615,10 @@ textarea {
   .hero-wrap {
     background-attachment: scroll;
     border-radius: 24px;
+  }
+
+  .card-grid.featured-grid {
+    grid-template-columns: 1fr;
   }
 }
 
