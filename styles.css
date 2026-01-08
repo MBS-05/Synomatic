@@ -367,22 +367,37 @@ main {
   gap: 24px;
 }
 
-.card-grid.featured-grid {
-  grid-template-columns: minmax(260px, 1.2fr) minmax(240px, 0.9fr);
-  align-items: stretch;
+.service-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.featured-card {
-  padding: 32px;
+.pill-card {
+  flex: 1 1 260px;
+  min-width: 240px;
+  padding: 22px 26px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
 }
 
-.featured-card p {
-  font-size: 1.05rem;
+.pill-card h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
-.stacked-cards {
-  display: grid;
-  gap: 24px;
+.pill-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.pill-card .button {
+  margin-top: 14px;
 }
 
 .card {
@@ -617,8 +632,8 @@ textarea {
     border-radius: 24px;
   }
 
-  .card-grid.featured-grid {
-    grid-template-columns: 1fr;
+  .service-pills {
+    flex-direction: column;
   }
 }
 
