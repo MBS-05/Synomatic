@@ -77,36 +77,74 @@
       <section id="pakete" class="section">
         <div class="section-header">
           <h2>Unsere Services</h2>
-          <p>Intelligente Automatisierungen für eine spürbare Entlastung in Ihrem Unternehmen.</p>
+          <p>Intelligente Automatisierungen fuer eine spuerbare Entlastung in Ihrem Unternehmen.</p>
         </div>
-        <div class="card-grid">
-          <article class="card reveal">
-            <h3>Standart Chatbot</h3>
-            <p>FAQ, Kundenservice, Terminvereinbarung, Produkt- & Serviceinformationen, Navigation auf der Website, Formularhilfe, Kontaktaufnahme.</p>
-            <p>24/7 erreichbar, Einbindung auf eigener Website, inkl. Service.</p>
-            <a class="button ghost" href="#kontakt">Interesse anfragen</a>
-          </article>
-          <article class="card reveal">
-            <h3>Standart Telefonbot</h3>
-            <p>Automatische Anrufannahme<br />
-              Beantwortet alle Anrufe,<br />
-              Kennt Unternehmensinfos,<br />
-              Kundenberatung,<br />
-              intelligente & vollautomatische Terminvereinbarung.</p>
-            <p>24/7 Verfügbarkeit,<br />
-              Mitarbeiter-Entlastung, Setup und Service im Unternehmen.</p>
-            <a class="button ghost" href="#kontakt">Interesse anfragen</a>
-          </article>
-          <article class="card reveal">
-            <h3>CRM Automation</h3>
-            <p>Kundenverwaltung, Zentrale Kundendaten, Kontaktmanagement, Terminverwaltung, Erinnerung an Termine, Automatische E-Mails & Chats, Feedbackanfragen, Nachfassaktionen (Follow-ups), Kundenhistorie, Kundenbindung, Prozessautomatisierung, Vertriebsunterstützung, Service-Übersicht.</p>
-            <a class="button ghost" href="#kontakt">Interesse anfragen</a>
-          </article>
-          <article class="card reveal">
-            <h3>Individuelle Bots & Workflows</h3>
-            <p>Individuelle Bot-Logik, Maßgeschneiderte Workflows, Prozessautomatisierung, Systemintegration, Regelbasierte Abläufe, KI-gestützte Entscheidungen, Datenverarbeitung, Automatische Trigger, Anpassbare Funktionen, Skalierbare Lösungen, Effizienzsteigerung, Zeitersparnis.</p>
-            <a class="button ghost" href="#kontakt">Interesse anfragen</a>
-          </article>
+        <div class="service-carousel" data-carousel>
+          <div class="carousel-track" data-track>
+            <article class="carousel-slide is-active">
+              <div class="slide-content">
+                <div class="slide-copy">
+                  <h3>Standart Chatbot</h3>
+                  <p>FAQ, Kundenservice, Terminvereinbarung, Produkt- & Serviceinformationen, Navigation auf der Website, Formularhilfe, Kontaktaufnahme.</p>
+                  <p>24/7 erreichbar, Einbindung auf eigener Website, inkl. Service.</p>
+                  <a class="button ghost" href="#kontakt">Interesse anfragen</a>
+                </div>
+                <div class="slide-media">
+                  <div class="media-placeholder">Bildplatzhalter</div>
+                </div>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="slide-content">
+                <div class="slide-copy">
+                  <h3>Standart Telefonbot</h3>
+                  <p>Automatische Anrufannahme<br />
+                    Beantwortet alle Anrufe,<br />
+                    Kennt Unternehmensinfos,<br />
+                    Kundenberatung,<br />
+                    intelligente & vollautomatische Terminvereinbarung.</p>
+                  <p>24/7 Verfuegbarkeit,<br />
+                    Mitarbeiter-Entlastung, Setup und Service im Unternehmen.</p>
+                  <a class="button ghost" href="#kontakt">Interesse anfragen</a>
+                </div>
+                <div class="slide-media">
+                  <div class="media-placeholder">Bildplatzhalter</div>
+                </div>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="slide-content">
+                <div class="slide-copy">
+                  <h3>CRM Automation</h3>
+                  <p>Kundenverwaltung, Zentrale Kundendaten, Kontaktmanagement, Terminverwaltung, Erinnerung an Termine, Automatische E-Mails & Chats, Feedbackanfragen, Nachfassaktionen (Follow-ups), Kundenhistorie, Kundenbindung, Prozessautomatisierung, Vertriebsunterstuetzung, Service-Uebersicht.</p>
+                  <a class="button ghost" href="#kontakt">Interesse anfragen</a>
+                </div>
+                <div class="slide-media">
+                  <div class="media-placeholder">Bildplatzhalter</div>
+                </div>
+              </div>
+            </article>
+            <article class="carousel-slide">
+              <div class="slide-content">
+                <div class="slide-copy">
+                  <h3>Individuelle Bots & Workflows</h3>
+                  <p>Individuelle Bot-Logik, Massgeschneiderte Workflows, Prozessautomatisierung, Systemintegration, Regelbasierte Ablaeufe, KI-gestuetzte Entscheidungen, Datenverarbeitung, Automatische Trigger, Anpassbare Funktionen, Skalierbare Loesungen, Effizienzsteigerung, Zeitersparnis.</p>
+                  <a class="button ghost" href="#kontakt">Interesse anfragen</a>
+                </div>
+                <div class="slide-media">
+                  <div class="media-placeholder">Bildplatzhalter</div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" type="button" data-prev aria-label="Zurueck">
+              <span aria-hidden="true">&#x2039;</span>
+            </button>
+            <button class="carousel-btn" type="button" data-next aria-label="Weiter">
+              <span aria-hidden="true">&#x203A;</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -346,9 +384,62 @@
 
       requestAnimationFrame(onScroll);
     })();
+
+    (() => {
+      const carousel = document.querySelector("[data-carousel]");
+      if (!carousel) return;
+      const track = carousel.querySelector("[data-track]");
+      const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
+      const prevBtn = carousel.querySelector("[data-prev]");
+      const nextBtn = carousel.querySelector("[data-next]");
+      if (!track || slides.length === 0) return;
+
+      let index = 0;
+      const update = () => {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
+      };
+
+      const go = (direction) => {
+        index = (index + direction + slides.length) % slides.length;
+        update();
+      };
+
+      if (prevBtn) prevBtn.addEventListener("click", () => go(-1));
+      if (nextBtn) nextBtn.addEventListener("click", () => go(1));
+
+      let startX = 0;
+      let currentX = 0;
+      let isDragging = false;
+
+      track.addEventListener("touchstart", (event) => {
+        if (event.touches.length !== 1) return;
+        startX = event.touches[0].clientX;
+        currentX = startX;
+        isDragging = true;
+      }, { passive: true });
+
+      track.addEventListener("touchmove", (event) => {
+        if (!isDragging) return;
+        currentX = event.touches[0].clientX;
+      }, { passive: true });
+
+      track.addEventListener("touchend", () => {
+        if (!isDragging) return;
+        const diff = currentX - startX;
+        if (Math.abs(diff) > 40) {
+          go(diff > 0 ? -1 : 1);
+        }
+        isDragging = false;
+      });
+
+      update();
+    })();
   </script>
 </body>
 </html>
+
+
 
 
 

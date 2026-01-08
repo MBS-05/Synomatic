@@ -367,6 +367,90 @@ main {
   gap: 24px;
 }
 
+.service-carousel {
+  position: relative;
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 28px 32px 80px;
+}
+
+.slide-content {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(240px, 0.9fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.slide-copy h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.slide-copy p {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.slide-media {
+  display: grid;
+  place-items: center;
+}
+
+.media-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 22px;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25), transparent 50%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.carousel-controls {
+  position: absolute;
+  right: 24px;
+  bottom: 18px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.carousel-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03));
+  color: var(--text);
+  font-size: 22px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(16px);
+}
+
+.carousel-btn:hover {
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
 
 .card {
   padding: 26px;
@@ -598,6 +682,18 @@ textarea {
   .hero-wrap {
     background-attachment: scroll;
     border-radius: 24px;
+  }
+
+  .slide-content {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-slide {
+    padding: 24px 22px 90px;
+  }
+
+  .carousel-controls {
+    right: 18px;
   }
 
 }
