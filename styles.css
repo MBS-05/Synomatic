@@ -68,14 +68,19 @@ a {
   font-family: "Bodoni MT", "Didot", "Times New Roman", serif;
   font-size: 28px;
   letter-spacing: 1px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
 }
 
 .logo img {
-  height: 48px;
+  height: 64px;
   width: auto;
   display: block;
   object-fit: contain;
   filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.45));
+  transform: translateY(-6px);
 }
 
 .nav {
