@@ -449,12 +449,20 @@
           showHeader();
           return;
         }
-        hideHeader();
+        if (!header.matches(":hover")) {
+          hideHeader();
+        }
       };
 
       hoverZone.addEventListener("mouseenter", showHeader);
-      hoverZone.addEventListener("mouseleave", () => {
+      header.addEventListener("mouseenter", showHeader);
+      header.addEventListener("mouseleave", () => {
         if (window.scrollY > 10) {
+          hideHeader();
+        }
+      });
+      hoverZone.addEventListener("mouseleave", () => {
+        if (!header.matches(":hover") && window.scrollY > 10) {
           hideHeader();
         }
       });
@@ -465,6 +473,7 @@
   </script>
 </body>
 </html>
+
 
 
 
