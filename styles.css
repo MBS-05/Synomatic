@@ -12,6 +12,7 @@
   --shadow: 0 40px 120px rgba(0, 0, 0, 0.55);
   --glass: rgba(255, 255, 255, 0.08);
   --glass-strong: rgba(255, 255, 255, 0.16);
+  --header-offset: 110px;
 }
 
 * {
@@ -153,8 +154,8 @@ main {
 
 .hero-wrap {
   position: relative;
-  margin: 0 -6vw;
-  padding: 14vh 6vw 10vh;
+  margin: calc(-1 * var(--header-offset)) -6vw 0;
+  padding: calc(14vh + var(--header-offset)) 6vw 10vh;
   background-image: url("images/hero-tech.png"),
     radial-gradient(circle at 15% 30%, rgba(255, 255, 255, 0.15), transparent 45%),
     radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.08), transparent 40%),
