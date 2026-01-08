@@ -367,38 +367,6 @@ main {
   gap: 24px;
 }
 
-.service-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.pill-card {
-  flex: 1 1 260px;
-  min-width: 240px;
-  padding: 22px 26px;
-  border-radius: 999px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02));
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(16px);
-}
-
-.pill-card h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-}
-
-.pill-card p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.pill-card .button {
-  margin-top: 14px;
-}
 
 .card {
   padding: 26px;
@@ -632,9 +600,6 @@ textarea {
     border-radius: 24px;
   }
 
-  .service-pills {
-    flex-direction: column;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
