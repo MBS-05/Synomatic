@@ -60,7 +60,6 @@ a {
   padding: 28px 6vw 40px;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(12px);
   background: transparent;
   z-index: 5;
 }
