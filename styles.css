@@ -425,9 +425,18 @@ main {
   place-items: center;
 }
 
+.slide-media img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
 .media-placeholder {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   border-radius: 22px;
   background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25), transparent 50%),
     linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
