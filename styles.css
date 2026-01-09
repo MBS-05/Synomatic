@@ -438,7 +438,7 @@ main {
 
 .slide-media img.media-zoom {
   object-fit: cover;
-  transform: scale(1.08);
+  transform: scale(1.18);
   transform-origin: center;
 }
 
