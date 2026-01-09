@@ -396,7 +396,13 @@
 
       let index = 0;
       const update = () => {
-        track.style.transform = `translateX(-${index * 100}%)`;
+        const slide = slides[index];
+        const slideWidth = slide.offsetWidth;
+        const carouselWidth = carousel.clientWidth;
+        const maxTranslate = track.scrollWidth - carouselWidth;
+        const target = slide.offsetLeft - (carouselWidth - slideWidth) / 2;
+        const clamped = Math.max(0, Math.min(target, maxTranslate));
+        track.style.transform = `translateX(-${clamped}px)`;
         slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
       };
 
@@ -404,6 +410,8 @@
         index = (index + direction + slides.length) % slides.length;
         update();
       };
+
+      window.addEventListener("resize", update);
 
       if (prevBtn) prevBtn.addEventListener("click", () => go(-1));
       if (nextBtn) nextBtn.addEventListener("click", () => go(1));
@@ -473,6 +481,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
