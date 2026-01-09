@@ -194,9 +194,9 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 60px;
-  align-items: center;
+  place-items: center;
+  text-align: center;
+  gap: 18px;
 }
 
 .eyebrow {
