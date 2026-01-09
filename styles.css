@@ -436,13 +436,6 @@ main {
   background: rgba(10, 10, 10, 0.9);
 }
 
-.slide-media img.media-zoom {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  transform: scale(1.18);
-  transform-origin: center center;
-}
 
 .media-placeholder {
   width: 100%;
