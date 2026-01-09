@@ -380,11 +380,6 @@ main {
 
 .service-carousel {
   position: relative;
-  border-radius: 28px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
   overflow: hidden;
 }
 
@@ -395,7 +390,7 @@ main {
 
 .carousel-slide {
   min-width: 100%;
-  padding: 28px 32px 80px;
+  padding: 0 0 80px;
 }
 
 .slide-content {
@@ -403,6 +398,12 @@ main {
   grid-template-columns: minmax(240px, 1fr) minmax(240px, 0.9fr);
   gap: 28px;
   align-items: center;
+  padding: 28px 32px;
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
 }
 
 .slide-copy h3 {
@@ -709,7 +710,7 @@ textarea {
   }
 
   .carousel-slide {
-    padding: 24px 22px 90px;
+    padding: 0 0 90px;
   }
 
   .carousel-controls {
