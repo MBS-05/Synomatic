@@ -431,10 +431,6 @@ main {
   box-shadow: var(--shadow);
 }
 
-.slide-media img.media-zoom {
-  transform: scale(1.12);
-  transform-origin: center center;
-}
 
 .slide-media img.media-contain {
   object-fit: contain;
