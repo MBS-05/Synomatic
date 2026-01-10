@@ -352,6 +352,15 @@ main {
   white-space: nowrap;
 }
 
+.icon-marquee-title {
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
 .icon-track {
   display: flex;
   flex-wrap: nowrap;
