@@ -353,25 +353,25 @@ main {
 
 .icon-track {
   display: flex;
-  gap: 26px;
+  gap: 18px;
   align-items: center;
   width: max-content;
-  animation: marquee 40s linear infinite;
+  animation: marquee 45s linear infinite;
 }
 
 .icon-track img {
-  height: 34px;
+  height: 20px;
   width: auto;
-  opacity: 0.9;
+  opacity: 0.95;
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
 }
 
 @keyframes marquee {
   from {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 
