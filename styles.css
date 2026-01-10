@@ -165,38 +165,15 @@ main {
   width: 100%;
 }
 
-.hero-wrap {
-  position: relative;
-  margin: calc(-1 * var(--header-offset)) -6vw 0;
-  padding: calc(14vh + var(--header-offset)) 6vw 10vh;
-  background-image: url("images/hero-tech.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.hero-image {
+  margin: 0 -6vw;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
   border-radius: 36px;
-  overflow: hidden;
   border: 1px solid rgba(10, 10, 10, 0.08);
-}
-
-.hero-wrap::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: none;
-  z-index: 0;
-}
-
-.hero {
-  position: relative;
-  z-index: 1;
-}
-
-.hero {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  gap: 18px;
-  padding-top: 80px;
 }
 
 .eyebrow {
@@ -708,11 +685,6 @@ textarea {
     gap: 14px;
   }
 
-  .hero-wrap {
-    background-attachment: scroll;
-    border-radius: 24px;
-  }
-
   .slide-content {
     grid-template-columns: 1fr;
   }
@@ -732,9 +704,5 @@ textarea {
   * {
     animation: none !important;
     transition: none !important;
-  }
-
-  .hero-wrap {
-    background-attachment: scroll;
   }
 }
