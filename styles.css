@@ -349,10 +349,13 @@ main {
 .icon-marquee {
   margin-top: 40px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .icon-track {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 18px;
   align-items: center;
   width: max-content;
