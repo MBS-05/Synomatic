@@ -346,6 +346,37 @@ main {
   margin-right: auto;
 }
 
+.icon-marquee {
+  margin: 40px 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.icon-track {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  animation: marquee-left 45s linear infinite;
+}
+
+.icon-track img {
+  height: 1em;
+  width: auto;
+  opacity: 0.9;
+  display: block;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 
 .section h2 {
   font-family: "Bodoni MT", "Didot", "Times New Roman", serif;
