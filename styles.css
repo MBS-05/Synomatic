@@ -368,6 +368,10 @@ main {
   display: block;
 }
 
+.icon-track img.icon-invert {
+  filter: invert(1) brightness(0.1);
+}
+
 @keyframes marquee-left {
   from {
     transform: translateX(-50%);
