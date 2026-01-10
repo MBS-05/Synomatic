@@ -346,38 +346,6 @@ main {
   margin-right: auto;
 }
 
-.icon-marquee {
-  margin-top: 40px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.icon-track {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 18px;
-  align-items: center;
-  width: max-content;
-  animation: marquee 45s linear infinite;
-}
-
-.icon-track img {
-  height: 16px;
-  width: auto;
-  opacity: 0.95;
-  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
-  display: block;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 
 .section h2 {
   font-family: "Bodoni MT", "Didot", "Times New Roman", serif;
