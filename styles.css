@@ -356,13 +356,13 @@ main {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 18px;
+  gap: 28px;
   width: max-content;
   animation: marquee-left 45s linear infinite;
 }
 
 .icon-track img {
-  height: 1em;
+  height: 2em;
   width: auto;
   opacity: 0.9;
   display: block;
