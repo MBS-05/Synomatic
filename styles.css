@@ -166,8 +166,9 @@ main {
 }
 
 .hero-image {
-  margin: calc(-1 * var(--header-offset)) -6vw 0;
-  width: calc(100% + 12vw);
+  margin: calc(-1 * var(--header-offset)) 0 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 .hero-image img {
