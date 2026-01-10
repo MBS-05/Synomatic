@@ -357,8 +357,9 @@ main {
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 12px;
+  color: rgba(17, 18, 20, 0.45);
+  margin-bottom: 6px;
+  margin-top: 18px;
 }
 
 .icon-track {
