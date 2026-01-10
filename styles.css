@@ -356,13 +356,14 @@ main {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 28px;
+  gap: 34px;
   width: max-content;
-  animation: marquee-left 45s linear infinite;
+  animation: marquee-left 40s linear infinite;
+  transform: translateX(0);
 }
 
 .icon-track img {
-  height: 2em;
+  height: 2.4em;
   width: auto;
   opacity: 0.9;
   display: block;
@@ -374,10 +375,10 @@ main {
 
 @keyframes marquee-left {
   from {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
 }
 
