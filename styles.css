@@ -347,9 +347,10 @@ main {
 }
 
 .icon-marquee {
-  margin: 10px 0 20px;
+  margin: 0 0 20px;
   overflow: hidden;
   white-space: nowrap;
+  line-height: 0;
 }
 
 .icon-marquee-title {
@@ -358,8 +359,8 @@ main {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(17, 18, 20, 0.45);
-  margin-bottom: 4px;
-  margin-top: 6px;
+  margin-bottom: 38px;
+  margin-top: 0;
 }
 
 .icon-track {
@@ -371,6 +372,7 @@ main {
   width: max-content;
   animation: marquee-left 40s linear infinite;
   transform: translateX(0);
+  line-height: 0;
 }
 
 .icon-track img {
@@ -379,6 +381,7 @@ main {
   opacity: 0.9;
   display: block;
   flex: 0 0 auto;
+  object-fit: contain;
 }
 
 .icon-track img.icon-invert {
