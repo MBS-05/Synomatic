@@ -347,7 +347,7 @@ main {
 }
 
 .icon-marquee {
-  margin: 0 0 20px;
+  margin: 0 0 6px;
   overflow: hidden;
   white-space: nowrap;
   line-height: 0;
@@ -359,7 +359,7 @@ main {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(17, 18, 20, 0.45);
-  margin-bottom: 38px;
+  margin-bottom: 6px;
   margin-top: 0;
 }
 
